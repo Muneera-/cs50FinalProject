@@ -6,32 +6,27 @@
 
 {% block main %}
 <!DOCTYPE html>
-<div class= "Cart">
-    <div class= "Name">Test_Name</div>
-    <div class="item">
-        <div class="buttons">
-            <span class="delete-btn".</span>
-        </div>
-    </div>
-    <!--<button class= "remove" type="button" name="button">-->
-    <!--    <img src="removeimg.png" alt="" />-->
-    <!--</button>-->
-    <div class="Quantity">
-    <button class= "addone" type="button" name="button">
-        <img src="addimg.png" alt="" />
-    </button>
-    <button class= "minus" type="button" name="button">
-        <img src="minusimg.png" alt="" />
-    </button>
-    </div>
-    <div class="image">
-        <img src="table1image.png" alt=""/>
-    </div>
-    <div class= "price">$100</div>
-    <div class = "checkout">
-    <button class="check_out" type="button" name="button">
-        <img src="check_outimg.png" alt=""/>
-    </button>
-    </div>
-</div>
+<form action="{{ url_for('shopping') }}" method="get">
+    <fieldset>
+        <table style="width:100%">
+            <caption>{{ username }} Shopping Cart</caption>
+            <tr>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Item Description</th> 
+                <th>Item Number</th>
+            </tr>
+            {% for item in testCart %}
+            <tr>
+                <td>TestName{{ item.name }}</td>
+                <td>${{ item.price }}</td>
+                <td><button class="addBtn">+</button> {{ item.quantity }} <button class="removeBtn">-</button></td>
+                <td>testDescription{{ item.description }}</td> 
+                <td>#{{ item.itemId }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </fieldset>
+</form>
 {% endblock %}
