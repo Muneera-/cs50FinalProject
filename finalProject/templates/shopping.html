@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Shopping
+{% endblock %}
+
+{% block main %}
+<!DOCTYPE html>
+<div class= "Cart">
+    <div class= "Name">Test_Name</div>
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn".</span>
+        </div>
+    </div>
+    <!--<button class= "remove" type="button" name="button">-->
+    <!--    <img src="removeimg.png" alt="" />-->
+    <!--</button>-->
+    <div class="Quantity">
+    <button class= "addone" type="button" name="button">
+        <img src="addimg.png" alt="" />
+    </button>
+    <button class= "minus" type="button" name="button">
+        <img src="minusimg.png" alt="" />
+    </button>
+    </div>
+    <div class="image">
+        <img src="table1image.png" alt=""/>
+    </div>
+    <div class= "price">$100</div>
+    <div class = "checkout">
+    <button class="check_out" type="button" name="button">
+        <img src="check_outimg.png" alt=""/>
+    </button>
+    </div>
+</div>
+{% endblock %}
