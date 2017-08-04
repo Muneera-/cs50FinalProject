@@ -210,10 +210,20 @@ def forgot():
         
         #ensure email exists
         cursor.execute("SELECT * FROM users WHERE email=?", (request.form.get("email"),))
-        rows = cursor.fetchall();
+        rows = cursor.fetchall()
         if(len(rows) != 1):
             return apology("email doesn't exist")
             
+        pword = request.form.get("password")
         
+        if(request.form.get("password") != request.form.get("password2")):
+            return apology("Passwords must match")
+            
+        if pwd_context.verify(request.form.get("password"), rows[2]):
+            return apology("must be new password")
+            
+        pword = pwd_context.encrypt(pword)
+        
+        cursor.execute("UPDATE users SET password=? WHERE email=?", (pword, request.form.get("email"),))
     else:
         return render_template("forgotten.html")
