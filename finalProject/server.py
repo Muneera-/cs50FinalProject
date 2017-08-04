@@ -155,7 +155,8 @@ def descrip():
     return render_template("descrip.html")
 
 
-@app.route("/index")
+@app.route("/")
+@login_required
 def index():
     return render_template("index.html")
 
