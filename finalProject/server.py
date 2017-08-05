@@ -5,16 +5,16 @@ from flask import Flask, flash, redirect, render_template, request, session, url
 from flask_session import Session
 from passlib.apps import custom_app_context as pwd_context
 from tempfile import mkdtemp
-from cartItem import CartItem
-from routes.Buy import buy_api
-from routes.Description import description_api
-from routes.Forgotten import forgotten_api
-from routes.Login import login_api
-from routes.Logout import logout_api
-from routes.Register import register_api
-from routes.Shopping import shopping_api
+from finalProject.cartItem import CartItem
+from finalProject.helpers import *
+from finalProject.routes.Buy import buy_api
+from finalProject.routes.Description import description_api
+from finalProject.routes.Forgotten import forgotten_api
+from finalProject.routes.Login import login_api
+from finalProject.routes.Logout import logout_api
+from finalProject.routes.Register import register_api
+from finalProject.routes.Shopping import shopping_api
 
-from helpers import *
 
 # configure application
 app = Flask(__name__)
@@ -52,7 +52,10 @@ shoppingCart=[]
 conn = sqlite3.connect("website.db");
 cursor = conn.cursor();
 
+def getConnection():
+    return conn
+
 @app.route("/")
 @login_required
 def index():
-    return render_template("index.html")
+    return render_template("shopping.html")
