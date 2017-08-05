@@ -1,4 +1,5 @@
 import sqlite3
+import finalProject.server
 from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint
 from flask_session import Session
 from passlib.apps import custom_app_context as pwd_context
@@ -11,7 +12,13 @@ buy_api = Blueprint('buy_api', __name__)
 @buy_api.route("/buy", methods=["GET", "POST"])
 @login_required
 def buy():
+
+    conn=finalProject.server.getConnection()
+    conn.row_factory = sqlite3.Row
+    cursor=conn.cursor()
+    
     if(request.method=="POST"):
+        
         #when checkout is clicked
         if request.form["submit"] == "checkout":
             return render_template("shopping.html")
@@ -45,4 +52,6 @@ def buy():
                     shoppingCart.remove(newItem)
             else:
                 return
-    return render_template("buy.html")
+    else:
+        inventory = cursor.execute("SELECT * FROM inventory")
+        return render_template("buy.html", inventory=inventory)
