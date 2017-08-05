@@ -59,7 +59,7 @@ def register():
         cursor.execute("SELECT * FROM users WHERE username=?", (request.form.get("username"),))
         row = cursor.fetchall()
         conn.commit()
-        # session["user_id"] = row[0][0];
+        session["user_id"] = row[0][0];
         # redirect user to home page
         return redirect(url_for("index"))
 
