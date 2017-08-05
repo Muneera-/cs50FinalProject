@@ -1,20 +1,22 @@
 import sqlite3
+import finalProject.server
 from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint
 from flask_session import Session
 from passlib.apps import custom_app_context as pwd_context
 from tempfile import mkdtemp
-from cartItem import CartItem
 
-from helpers import *
+from finalProject.helpers import *
 
 register_api = Blueprint('register_api', __name__)
 
 @register_api.route("/register", methods=["GET", "POST"])
 def register():
     """Register user."""
-    
         # if user reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
+        
+        conn=finalProject.server.getConnection()
+        cursor=conn.cursor()
 
         # ensure username was submitted
         if not request.form.get("username"):
@@ -24,7 +26,7 @@ def register():
         elif not request.form.get("password"):
             return apology("must provide password")
 
-        elif not request.form.get("password2"):
+        elif not request.form.get("password confirmation"):
             return apology("Passwords must match");
             
         # query database for username
@@ -44,7 +46,7 @@ def register():
             return apology("Email address in use")
         
         
-        if request.form.get("password")!=request.form.get("password2"):
+        if request.form.get("password")!=request.form.get("password confirmation"):
             return apology("Passwords must match")
 
         #encrypt password
@@ -52,15 +54,12 @@ def register():
         encp = pwd_context.encrypt(pwd);
 
         # save to database
-        cursor.execute("INSERT INTO users (username, password, email) VALUES(?, ?, ?)", (request.form.get("username"), encp, request.form.get("email"),))
+        cursor.execute("INSERT INTO users (username, password, email, name) VALUES(?, ?, ?, ?)", (request.form.get("username"), encp, request.form.get("email"), request.form.get("username")))
         
-        cursor.execute("SELECT * FROM users WHERE username=?", (request.form.get("username"),));
-        row = cursor.fetchall();
-        
-        
-        session["user_id"] = row[0][0];
-
-            
+        cursor.execute("SELECT * FROM users WHERE username=?", (request.form.get("username"),))
+        row = cursor.fetchall()
+        conn.commit()
+        # session["user_id"] = row[0][0];
         # redirect user to home page
         return redirect(url_for("index"))
 
