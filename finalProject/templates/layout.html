@@ -38,11 +38,8 @@
                     <div class="collapse navbar-collapse" id="navbar">
                         {% if session.user_id %}
                             <ul class="nav navbar-nav">
-                                <li><a href="{{ url_for('browse_api.browse') }}">Browse</a></li>
+                                <li><a href="{{ url_for('index') }}">Browse</a></li>
                                 <li><a href="{{ url_for('buy_api.buy') }}">Buy</a></li>
-                                <li><a href="{{ url_for('sell_api.sell') }}">Sell</a></li>
-                                <li><a href="{{ url_for('history_api.history') }}">User Stories</a></li>
-                                <li><a href="{{ url_for('account_api.account') }}">Account</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="{{ url_for('logout_api.logout') }}">Log Out</a></li>

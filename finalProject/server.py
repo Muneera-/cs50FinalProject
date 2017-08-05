@@ -24,6 +24,7 @@ app.register_blueprint(buy_api)
 app.register_blueprint(description_api)
 app.register_blueprint(forgotten_api)
 app.register_blueprint(login_api)
+app.register_blueprint(logout_api)
 app.register_blueprint(register_api)
 app.register_blueprint(shopping_api)
 
