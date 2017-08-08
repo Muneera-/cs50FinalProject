@@ -13,4 +13,34 @@ def shopping():
     testCart=[]
     for i in range(0,5):
         testCart.append(CartItem(i, i, i))
+    
+    class testCart(object):
+	
+	    def __init__():
+		    total = 0
+		    items = {}
+	
+	    def add_item (item.name, item.quantity, item.price, item.number):
+		    total += (quantity * price)
+		    items[item_name] = quantity
+		
+	    def remove_item (item.name, item.quantity, item.price, item.number):
+		    total -= (quantity * price)
+    		items.pop(item.name, None)
+		
+	    def checkout (cash_paid):
+		    balance = cash_paid - total
+		    if balance < 0:
+			    print "Cash paid not enough"
+		    else:
+			    print balance
+
+class Shop (testCart):
+	
+	def __init__():
+		quantity = 100
+	
+	def remove_item (quantity):
+		quantity -= 1
+    
     return render_template("shopping.html", testCart=testCart)
