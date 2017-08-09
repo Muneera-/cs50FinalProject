@@ -1,0 +1,80 @@
+<!-- THIS IS JUST EXAMPLE FOR FRONT END TEAM -->
+
+<html>
+
+<head>
+    <title>Bob's Video</title>
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{url_for(" static ", filename="js/jquery.creditCardTypeDetector.js ")}}"></script>
+    <script type="text/javascript" src="{{url_for(" static ", filename="js/demos.js ")}}"></script>
+
+</head>
+
+<body>
+
+    <h1>{{item.name}}</h1>
+
+    <p>
+        Please fill out the form below to complete your purchase for {{item.name}}. {% if item.price %} The price is ${{item.price}}.
+        {% else %} This is a subscription. {% endif %}
+    </p>
+
+    <div id="fail">
+        Sorry, we could not process your credit card: <span id="fail_reason"></span>.
+        <br/><br/> Please correct the form and try again.
+    </div>
+
+    <form action="{{url_for('itemshop.%s.process' % item.name)}}" method="POST" id="stripe-form">
+        <input type="hidden" name="stripe_token" value="" />
+        <div class="form-row">
+            <label>Name</label>
+            <input type="text" size="35" maxlength="99" name="name" />
+        </div>
+        <div class="form-row">
+            <label>Email</label>
+            <input type="text" size="20" maxlength="99" name="email" />
+        </div>
+        <div class="form-row">
+            <label>Card number</label>
+            <input type="text" size="20" maxlength="20" autocomplete="off" id="card-number" />
+        </div>
+        <div class="form-row">
+            <label>&nbsp;</label>
+            <ul class="card_logos">
+                <li class="card_visa">Visa</li>
+                <li class="card_mastercard">Mastercard</li>
+                <li class="card_amex">American Express</li>
+                <li class="card_discover">Discover</li>
+                <li class="card_jcb">JCB</li>
+                <li class="card_diners">Diners Club</li>
+            </ul>
+        </div>
+        <div class="form-row">
+            <label>CVC</label>
+            <input type="text" size="4" maxlength="4" autocomplete="off" id="card-cvc" />
+        </div>
+        <div class="form-row">
+            <label>Expiration <small>(MM/YYYY)</small></label>
+            <input type="text" size="2" maxlength="2" id="card-expiry-month" />
+            <span> / </span>
+            <input type="text" size="4" maxlength="4" id="card-expiry-year" />
+        </div>
+
+        <div class="form-row">
+            <label>&nbsp;</label>
+            <button type="submit" class="submit-button">Submit Payment</button>
+        </div>
+
+
+        <div id="secure_notice">
+            Your payment information is sent securely via SSL to our payment processor. It is never sent to or stored on our servers.
+        </div>
+    </form>
+
+    <p><a href="/">Back</a> to homepage.</p>
+
+</body>
+
+</html>
