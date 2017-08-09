@@ -1,46 +1,41 @@
-.container
-{
-    /* center contents */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-/* colors for navbar */
-.navbar-default .navbar-brand .blue
-{
-    color: #537fbe;
-}
-.navbar-default .navbar-brand .red
-{
-    color: #ea433b;
-}
-.navbar-default .navbar-brand .yellow
-{
-    color: #f5b82e;
-}
-.navbar-default .navbar-brand .green
-{
-    color: #2e944b;
+body {
+    background: url("https://s19.postimg.org/vhgs1ahpf/Videos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lekton', sans-serif;
+    color: #42464c;
 }
 
-main .form-control
-{
-    /* center form controls */
-    display: inline-block;
-
-    /* override Bootstrap's 100% width for form controls */
-    width: auto;
+body a {
+    font-family: 'Lekton', sans-serif;
+    color: #42464c;
 }
 
-main img
-{
-    /* constrain images on small screens */
-    max-width: 100%;
+
+.navbar {
+    background-color: #F9F3E7;
+    font-family: 'Lekton', sans-serif;
 }
 
-main td
-{
-    /* left-align tables' cells */
-    text-align: left;
+.navbar a {
+    color: #42464c;
+}
+
+#bigcontainer {
+    height: 100%;
+    width: 80%;
+    background-color: #F9F3E7;
+    overflow: hidden;
+}
+
+#content {
+    margin-top: 4em;
+    width: 80%;
+    height: 100%;
 }

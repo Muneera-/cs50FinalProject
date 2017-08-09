@@ -14,18 +14,18 @@ def forgot():
     if(request.method=="POST"):
         
         #if no email inputted
-        if not(request.form.get("email")):
-            return apology("must provide email")
+        if not(request.form.get("username")):
+            return apology("must provide username")
         
         #ensure email exists
-        cursor.execute("SELECT * FROM users WHERE email=?", (request.form.get("email"),))
+        cursor.execute("SELECT * FROM users WHERE username=?", (request.form.get("username"),))
         rows = cursor.fetchall()
         if(len(rows) != 1):
             return apology("email doesn't exist")
             
         pword = request.form.get("password")
         
-        if(request.form.get("password") != request.form.get("password2")):
+        if(pword != request.form.get("passwordagain")):
             return apology("Passwords must match")
             
         if pwd_context.verify(request.form.get("password"), rows[2]):
@@ -33,6 +33,6 @@ def forgot():
             
         pword = pwd_context.encrypt(pword)
         
-        cursor.execute("UPDATE users SET password=? WHERE email=?", (pword, request.form.get("email"),))
+        cursor.execute("UPDATE users SET password=? WHERE username=?", (pword, request.form.get("username"),))
     else:
         return render_template("forgotten.html")

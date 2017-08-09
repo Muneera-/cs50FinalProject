@@ -17,4 +17,4 @@ def logout():
     session.clear()
 
     # redirect user to login form
-    return redirect(url_for("login"))
+    return redirect(url_for("login_api.login"))

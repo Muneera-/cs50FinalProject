@@ -1,0 +1,177 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Blueprint	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+Blueprint	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Blueprint	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Blueprint	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+Blueprint	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Blueprint	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+Blueprint	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Buy.py	../finalProject/routes/Buy.py	1;"	kind:file	line:1
+CartItem	../finalProject/cartItem.py	/^class CartItem(object):$/;"	kind:class	line:1
+CartItem	../finalProject/routes/Buy.py	/^from finalProject.cartItem import CartItem$/;"	kind:namespace	line:7
+CartItem	../finalProject/routes/Shopping.py	/^from finalProject.cartItem import CartItem$/;"	kind:namespace	line:6
+CartItem	../finalProject/server.py	/^from finalProject.cartItem import CartItem$/;"	kind:namespace	line:8
+Description.py	../finalProject/routes/Description.py	1;"	kind:file	line:1
+Flask	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+Flask	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Flask	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Flask	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+Flask	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Flask	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+Flask	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+Flask	../finalProject/server.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+Forgotten.py	../finalProject/routes/Forgotten.py	1;"	kind:file	line:1
+Login.py	../finalProject/routes/Login.py	1;"	kind:file	line:1
+Logout.py	../finalProject/routes/Logout.py	1;"	kind:file	line:1
+Register.py	../finalProject/routes/Register.py	1;"	kind:file	line:1
+Session	../finalProject/routes/Buy.py	/^from flask_session import Session$/;"	kind:namespace	line:4
+Session	../finalProject/routes/Description.py	/^from flask_session import Session$/;"	kind:namespace	line:3
+Session	../finalProject/routes/Forgotten.py	/^from flask_session import Session$/;"	kind:namespace	line:3
+Session	../finalProject/routes/Login.py	/^from flask_session import Session$/;"	kind:namespace	line:4
+Session	../finalProject/routes/Logout.py	/^from flask_session import Session$/;"	kind:namespace	line:3
+Session	../finalProject/routes/Register.py	/^from flask_session import Session$/;"	kind:namespace	line:4
+Session	../finalProject/routes/Shopping.py	/^from flask_session import Session$/;"	kind:namespace	line:3
+Session	../finalProject/server.py	/^from flask_session import Session$/;"	kind:namespace	line:5
+Shopping.py	../finalProject/routes/Shopping.py	1;"	kind:file	line:1
+__init__	../finalProject/cartItem.py	/^    def __init__(self, quantity, itemId, price):$/;"	kind:member	line:9
+__init__.py	../finalProject/__init__.py	1;"	kind:file	line:1
+__init__.py	../finalProject/routes/__init__.py	1;"	kind:file	line:1
+after_request	../finalProject/server.py	/^    def after_request(response):$/;"	kind:function	line:34
+apology	../finalProject/helpers.py	/^def apology(top="", bottom=""):$/;"	kind:function	line:7
+app	../finalProject/server.py	/^app = Flask(__name__)$/;"	kind:variable	line:20
+buy	../finalProject/routes/Buy.py	/^def buy():$/;"	kind:function	line:14
+buy_api	../finalProject/routes/Buy.py	/^buy_api = Blueprint('buy_api', __name__)$/;"	kind:variable	line:10
+buy_api	../finalProject/server.py	/^from finalProject.routes.Buy import buy_api$/;"	kind:namespace	line:10
+cartItem.py	../finalProject/cartItem.py	1;"	kind:file	line:1
+conn	../finalProject/routes/Logout.py	/^conn = sqlite3.connect("website.db");$/;"	kind:variable	line:9
+conn	../finalProject/server.py	/^conn = sqlite3.connect("website.db");$/;"	kind:variable	line:53
+conn	../finalProject/sqlDatabase.py	/^conn = sqlite3.connect("website.db")$/;"	kind:variable	line:2
+csv	../finalProject/helpers.py	/^import csv$/;"	kind:namespace	line:1
+cursor	../finalProject/routes/Logout.py	/^cursor = conn.cursor();$/;"	kind:variable	line:10
+cursor	../finalProject/server.py	/^cursor = conn.cursor();$/;"	kind:variable	line:54
+cursor	../finalProject/sqlDatabase.py	/^cursor= conn.cursor()$/;"	kind:variable	line:3
+decorated_function	../finalProject/helpers.py	/^    def decorated_function(*args, **kwargs):$/;"	kind:function	line:28
+descrip	../finalProject/routes/Description.py	/^def descrip():$/;"	kind:function	line:10
+description	../finalProject/cartItem.py	/^    description = ""$/;"	kind:variable	line:5
+description_api	../finalProject/routes/Description.py	/^description_api = Blueprint('description_api', __name__)$/;"	kind:variable	line:7
+description_api	../finalProject/server.py	/^from finalProject.routes.Description import description_api$/;"	kind:namespace	line:11
+escape	../finalProject/helpers.py	/^    def escape(s):$/;"	kind:function	line:9
+finalProject	../finalProject/routes/Buy.py	/^import finalProject.server$/;"	kind:namespace	line:2
+finalProject	../finalProject/routes/Login.py	/^import finalProject.server$/;"	kind:namespace	line:2
+finalProject	../finalProject/routes/Register.py	/^import finalProject.server$/;"	kind:namespace	line:2
+flash	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+flash	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+flash	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+flash	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+flash	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+flash	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+flash	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+flash	../finalProject/server.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+forgot	../finalProject/routes/Forgotten.py	/^def forgot():$/;"	kind:function	line:13
+forgotten_api	../finalProject/routes/Forgotten.py	/^forgotten_api = Blueprint('forgotten_api', __name__)$/;"	kind:variable	line:9
+forgotten_api	../finalProject/server.py	/^from finalProject.routes.Forgotten import forgotten_api$/;"	kind:namespace	line:12
+getConnection	../finalProject/server.py	/^def getConnection():$/;"	kind:function	line:56
+helpers.py	../finalProject/helpers.py	1;"	kind:file	line:1
+index	../finalProject/server.py	/^def index():$/;"	kind:function	line:61
+itemId	../finalProject/cartItem.py	/^    itemId = 0$/;"	kind:variable	line:3
+login	../finalProject/routes/Login.py	/^def login():$/;"	kind:function	line:13
+login_api	../finalProject/routes/Login.py	/^login_api = Blueprint('login_api', __name__)$/;"	kind:variable	line:10
+login_api	../finalProject/server.py	/^from finalProject.routes.Login import login_api$/;"	kind:namespace	line:13
+login_required	../finalProject/helpers.py	/^def login_required(f):$/;"	kind:function	line:21
+logout	../finalProject/routes/Logout.py	/^def logout():$/;"	kind:function	line:13
+logout_api	../finalProject/routes/Logout.py	/^logout_api = Blueprint('logout_api', __name__)$/;"	kind:variable	line:7
+logout_api	../finalProject/server.py	/^from finalProject.routes.Logout import logout_api$/;"	kind:namespace	line:14
+mkdtemp	../finalProject/routes/Buy.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:6
+mkdtemp	../finalProject/routes/Description.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:5
+mkdtemp	../finalProject/routes/Forgotten.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:5
+mkdtemp	../finalProject/routes/Login.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:6
+mkdtemp	../finalProject/routes/Logout.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:5
+mkdtemp	../finalProject/routes/Register.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:6
+mkdtemp	../finalProject/routes/Shopping.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:5
+mkdtemp	../finalProject/server.py	/^from tempfile import mkdtemp$/;"	kind:namespace	line:7
+name	../finalProject/cartItem.py	/^    name = ""$/;"	kind:variable	line:6
+price	../finalProject/cartItem.py	/^    price = 0.0$/;"	kind:variable	line:4
+pwd_context	../finalProject/routes/Buy.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:5
+pwd_context	../finalProject/routes/Description.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:4
+pwd_context	../finalProject/routes/Forgotten.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:4
+pwd_context	../finalProject/routes/Login.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:5
+pwd_context	../finalProject/routes/Logout.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:4
+pwd_context	../finalProject/routes/Register.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:5
+pwd_context	../finalProject/routes/Shopping.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:4
+pwd_context	../finalProject/server.py	/^from passlib.apps import custom_app_context as pwd_context$/;"	kind:namespace	line:6
+quantity	../finalProject/cartItem.py	/^    quantity = 0$/;"	kind:variable	line:2
+redirect	../finalProject/helpers.py	/^from flask import redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+redirect	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+redirect	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+redirect	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+redirect	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+redirect	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+redirect	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+redirect	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+redirect	../finalProject/server.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+register	../finalProject/routes/Register.py	/^def register():$/;"	kind:function	line:13
+register_api	../finalProject/routes/Register.py	/^register_api = Blueprint('register_api', __name__)$/;"	kind:variable	line:10
+register_api	../finalProject/server.py	/^from finalProject.routes.Register import register_api$/;"	kind:namespace	line:15
+render_template	../finalProject/helpers.py	/^from flask import redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+render_template	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+render_template	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+render_template	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+render_template	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+render_template	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+render_template	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+render_template	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+render_template	../finalProject/server.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+request	../finalProject/helpers.py	/^from flask import redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+request	../finalProject/helpers.py	/^import urllib.request$/;"	kind:namespace	line:2
+request	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+request	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+request	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+request	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+request	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+request	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+request	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+request	../finalProject/server.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+server	../finalProject/routes/Buy.py	/^import finalProject.server$/;"	kind:namespace	line:2
+server	../finalProject/routes/Login.py	/^import finalProject.server$/;"	kind:namespace	line:2
+server	../finalProject/routes/Register.py	/^import finalProject.server$/;"	kind:namespace	line:2
+server.py	../finalProject/server.py	1;"	kind:file	line:1
+session	../finalProject/helpers.py	/^from flask import redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+session	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+session	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+session	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+session	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+session	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+session	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+session	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+session	../finalProject/server.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+shopping	../finalProject/routes/Shopping.py	/^def shopping():$/;"	kind:function	line:12
+shoppingCart	../finalProject/server.py	/^shoppingCart=[]$/;"	kind:variable	line:50
+shopping_api	../finalProject/routes/Shopping.py	/^shopping_api = Blueprint('shopping_api', __name__)$/;"	kind:variable	line:8
+shopping_api	../finalProject/server.py	/^from finalProject.routes.Shopping import shopping_api$/;"	kind:namespace	line:16
+sqlDatabase.py	../finalProject/sqlDatabase.py	1;"	kind:file	line:1
+sqlite3	../finalProject/routes/Buy.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../finalProject/routes/Description.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../finalProject/routes/Forgotten.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../finalProject/routes/Login.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../finalProject/routes/Logout.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../finalProject/routes/Register.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../finalProject/routes/Shopping.py	/^import sqlite3$/;"	kind:namespace	line:1
+sqlite3	../finalProject/server.py	/^import sqlite3$/;"	kind:namespace	line:3
+sqlite3	../finalProject/sqlDatabase.py	/^import sqlite3$/;"	kind:namespace	line:1
+url_for	../finalProject/helpers.py	/^from flask import redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+url_for	../finalProject/routes/Buy.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+url_for	../finalProject/routes/Description.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+url_for	../finalProject/routes/Forgotten.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+url_for	../finalProject/routes/Login.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+url_for	../finalProject/routes/Logout.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+url_for	../finalProject/routes/Register.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:3
+url_for	../finalProject/routes/Shopping.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint$/;"	kind:namespace	line:2
+url_for	../finalProject/server.py	/^from flask import Flask, flash, redirect, render_template, request, session, url_for$/;"	kind:namespace	line:4
+urllib	../finalProject/helpers.py	/^import urllib.request$/;"	kind:namespace	line:2
+usd	../finalProject/helpers.py	/^def usd(value):$/;"	kind:function	line:34
+wraps	../finalProject/helpers.py	/^from functools import wraps$/;"	kind:namespace	line:5

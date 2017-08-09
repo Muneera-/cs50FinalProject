@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+{% extends "layout.html" %}
+
+{% block main %}
+<html>
+<head>
+    <title>{% block title %} Movie Info {% endblock %}</title>
+</head>
+<body>
+    <div class="container container-fluid text-center">
+        <div id="poster">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642">
+        </div>
+        <div id="movieinfo">
+            <div id="des">
+                <h2>Arrival (2016)</h2>
+            <p>When mysterious spacecraft touch down across the globe, an elite team--lead by expert linguist Louise Banks (Amy Adams)--are brought together to investigate. As mankind teeters on the verge of global war, Banks and the team race against time for answers--and to find them, she will take a chance that could threaten her life, and quite possibly humanity.<br>
+            <span>Source:</span>
+            <a href="https://www.rottentomatoes.com/m/arrival_2016/">Rotten Tomatoes</a>
+            </p></div>
+        
+        <div id="available">
+            <button type="button" id="rent">Rent</button>
+            <button type="button" id="download">Download</button>
+            <button type="button" id="buy">Buy DVD/Blu-Ray</button>
+        </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+{% end block %}

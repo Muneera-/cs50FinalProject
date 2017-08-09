@@ -13,4 +13,3 @@ def shopping():
     testCart=[]
     for i in range(0,5):
         testCart.append(CartItem(i, i, i))
-    return render_template("shopping.html", testCart=testCart)
