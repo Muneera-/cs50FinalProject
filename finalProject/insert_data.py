@@ -39,11 +39,11 @@ cursor.execute("INSERT INTO payment(ccName, address, ccNumber, exp, ccv, userID)
 cursor.execute("INSERT INTO payment(ccName, address, ccNumber, exp, ccv, userID) VALUES('e', '127 Test Street', '1234123412341238', '00/0004', '127', '5')")
 #conn.commit();
 
-cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('23.45', 1', (select userID from users where username = 'a'), (select itemID from inventory where name = 'Raging Bull'), '12345')")
-cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('543.67', 2', (select userID fro7m users where username = 'b'), (select itemID from inventory where name = 'Raging Bull'), '1234')")
-cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('4.34', '1', (select userID from users where username = 'c'), (select itemID from inventory where name = 'Casablanca'), '54321')")
-cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('9.00', 2', (select userID from users where username = 'd'), (select itemID from inventory where name = 'The Shawshank Redemption'), '6780')")
-cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('12.00', 2', (select userID from users where username = 'e'), (select itemID from inventory where name = 'Casablanca'), '5432')")
+cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('23.45', '1', (SELECT userID FROM users WHERE username='a'), (SELECT itemID FROM inventory WHERE name = 'Raging Bull'), '12345')")
+cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('543.67', '2', (SELECT userID FROM users WHERE username = 'b'), (SELECT itemID FROM inventory WHERE name = 'Raging Bull'), '1234')")
+cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('4.34', '1', (SELECT userID FROM users WHERE username = 'c'), (SELECT itemID FROM inventory WHERE name = 'Casablanca'), '54321')")
+cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('9.00', '2', (SELECT userID FROM users WHERE username = 'd'), (SELECT itemID FROM inventory WHERE name = 'The Shawshank Redemption'), '6780')")
+cursor.execute("INSERT INTO orders(total, quantity, userID, itemID, ccID) VALUES('12.00', '2', (SELECT userID FROM users WHERE username = 'e'), (SELECT itemID FROM inventory WHERE name = 'Casablanca'), '5432')")
 conn.commit();
 
 #rows = cursor.execute("SELECT * FROM users WHERE username = ?", ('a',))
