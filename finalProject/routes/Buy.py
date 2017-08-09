@@ -1,5 +1,5 @@
 import sqlite3
-import finalProject.server
+import finalProject.application
 from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint
 from flask_session import Session
 from passlib.apps import custom_app_context as pwd_context
@@ -14,7 +14,7 @@ buy_api = Blueprint('buy_api', __name__)
 @login_required
 def buy():
 
-    conn=finalProject.server.getConnection()
+    conn=finalProject.application.getConnection()
     conn.row_factory = sqlite3.Row
     cursor=conn.cursor()
     
