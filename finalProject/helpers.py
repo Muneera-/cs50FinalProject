@@ -34,3 +34,31 @@ def login_required(f):
 def usd(value):
     """Formats value as USD."""
     return "${:,.2f}".format(value)
+
+
+def lookup(symbol):
+    """Look up movie."""
+
+    # query the movie database for movie
+
+    try:
+        url = "https://themoviedb.org.format(symbol)"
+        webpage = urllib.request.urlopen(url)
+        datareader = csv.reader(webpage.read().decode("utf-8").splitlines())
+        row = next(datareader)
+    except:
+        return None
+
+    # ensure movie exists
+    try:
+        media_id = (row[0])
+    except:
+        return None
+
+    # return stock's name (as a str), price (as a float), and (uppercased) symbol (as a str)
+    return {
+        "poster_id": ,
+        "title": price,
+        "release_year"
+        "description": row[0].upper()
+    }
