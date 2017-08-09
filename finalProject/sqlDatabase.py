@@ -43,7 +43,7 @@ cursor.execute("""CREATE TABLE inventory(
                   description TEXT,
                   price NUMERIC NOT NULL DEFAULT '0.0',
                   name TEXT NOT NULL,
-                  mediaID INTEGER,
+                  mediaID INTEGER UNIQUE NOT NULL,
                   img_url TEXT,
                   genre TEXT NOT NULL DEFAULT '0',
                   FOREIGN KEY (mediaID) REFERENCES mediaType(mediaID))
