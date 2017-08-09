@@ -20,7 +20,7 @@ cursor.execute("""CREATE TABLE users(
                """)
                
 cursor.execute("""CREATE TABLE payment(
-                  ccID INTEGER PRIMARY KEY AUNTOINCREMENT NOT NULL,
+                  ccID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
                   ccName TEXT, 
                   address TEXT, 
                   ccNumber INTEGER,
@@ -44,6 +44,7 @@ cursor.execute("""CREATE TABLE inventory(
                   price NUMERIC NOT NULL DEFAULT '0.0',
                   name TEXT NOT NULL,
                   mediaID INTEGER,
+                  img_url TEXT,
                   genre TEXT NOT NULL DEFAULT '0',
                   FOREIGN KEY (mediaID) REFERENCES mediaType(mediaID))
                """)
@@ -51,7 +52,7 @@ cursor.execute("""CREATE TABLE inventory(
 cursor.execute("""CREATE TABLE orders(
                   orderNum INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
                   ccID INTEGER NOT NULL,
-                  total NUMERIC NOT NULL
+                  total NUMERIC NOT NULL,
                   itemID INTEGER NOT NULL, 
                   userID INTEGER NOT NULL,
                   quantity INTEGER NOT NULL,

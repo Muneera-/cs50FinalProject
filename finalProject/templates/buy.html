@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('buy_api.buy') }}" method="get">
+        <fieldset>
+            <table style="width:100%">
+                <caption>Inventory</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Genre</th>
+                    <th>Price</th>
+                    <th>Media Type</th> 
+                    <th>Description</th>
+                    <th>Item#</th>
+                </tr>
+                {% for row in inventory %}
+                <tr>
+                    <td>{{ row.name }}</td>
+                    <td>{{ row.genre }}</td>
+                    <td>{{ row.price }}</td>
+                    <td>{{ row.mediaID }}</td> 
+                    <td>{{ row.description }}</td>
+                    <td name="itemId">{{ row.itemId }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </fieldset>
+    </form>
+{% endblock %}
