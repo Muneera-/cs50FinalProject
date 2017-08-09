@@ -19,15 +19,16 @@ def buy():
     
     if(request.method=="POST"):
         
-        #when checkout is clicked
-        if request.form["submit"] == "checkout":
-            return render_template("shopping.html")
         quantity = int(request.form.get("quantity"))
         itemId = int(request.form.get("itemId"))
         price = cursor.execute("SELECT price FROM inventory WHERE itemID = :itemId", itemId=itemId)
         #create Item to add to cart
         newItem = CartItem(quantity, itemId, price)
         
+        #when checkout is clicked
+        if request.form["submit"] == "checkout":
+            return render_template("shopping.html")
+            
         #when add item is clicked
         if request.form["submit"] == "addItem":
             #check if item is already in our cart
@@ -53,5 +54,6 @@ def buy():
             else:
                 return
     else:
+        shoppingCart = ShoppingCart()
         inventory = cursor.execute("SELECT * FROM inventory")
         return render_template("buy.html", inventory=inventory)
