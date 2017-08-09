@@ -1,5 +1,5 @@
 import sqlite3
-import finalProject.server
+import finalProject.application
 from flask import Flask, flash, redirect, render_template, request, session, url_for, Blueprint
 from flask_session import Session
 from passlib.apps import custom_app_context as pwd_context
@@ -15,7 +15,7 @@ def register():
         # if user reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
         
-        conn=finalProject.server.getConnection()
+        conn=finalProject.application.getConnection()
         cursor=conn.cursor()
 
         # ensure username was submitted
