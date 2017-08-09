@@ -12,9 +12,9 @@ cursor.execute("DROP TABLE IF EXISTS payment")
 #create tables
 cursor.execute("""CREATE TABLE users(
                   userID INTEGER PRIMARY KEY AUTOINCREMENT,
-                  username TEXT,
+                  username TEXT UNIQUE,
                   password TEXT,
-                  email TEXT,
+                  email TEXT UNIQUE,
                   name TEXT, 
                   active INTEGER DEFAULT 1)
                """)
