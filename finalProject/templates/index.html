@@ -1,247 +1,302 @@
 {% extends "layout.html" %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{% block title %}Bob's Cool Videos!{% endblock %}</title>
-</head>
+{% block title %}Bob's Cool Videos!{% endblock %}
 
-{% block main %}
-<div class="moviesection">
-    <div class="container">
-        <h3>New</h3>
-    <div class="col-md-12">
-    <div class="well">
-    <div id="new" class="carousel slide">
-        
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="row">
-                    <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                    <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                    <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                    <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                </div>
-                <!--/row-->
-            </div>
-            <!--/item-->
-            <div class="item">
-                <div class="row">
-                    <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                    <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                    <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                    <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                    </div>
-                </div>
-                <!--/row-->
-            </div>
-                    <!--/item-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
+(% block main %}
+    <div class="moviesection">
+        <div class="container">
+            <h3>New</h3>
+            
+            <div class="col-md-12">
+                <div id="new" class="well carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
+                            <!--/row-->
                         </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                </div>
-                <!--/carousel-inner--> <a class="left carousel-control" href="#new" data-slide="prev">‹</a>
-
-                <a class="right carousel-control" href="#new" data-slide="next">›</a>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div> <!--/row-->
+                        </div> <!--/item-->
+                        <div class="item row">
+                            <div class="col-sm-3">
+                                <a href="descrip.html" class="thumbnail">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="descrip.html" class="thumbnail">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="descrip.html" class="thumbnail">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="descrip.html" class="thumbnail">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                </a>
+                            </div>
+                        </div> <!--/row and item-->
+                    </div> <!--/carousel-inner--> 
+                    
+                    <a class="left carousel-control" href="#new" data-slide="prev">‹</a>
+                    <a class="right carousel-control" href="#new" data-slide="next">›</a>
+                </div> <!--/myCarousel and well-->
             </div>
-            <!--/myCarousel-->
         </div>
-        <!--/well-->
-    </div>
-</div>
-            
-            
-            
+        
+        
+        
         <div class="moviesection">
-            
             <div class="container">
                 <h3>Next Category</h3>
-    <div class="col-md-12">
-
-        <div class="well">
-            <div id="next" class="carousel slide">
-                
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="descrip.html" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
+                <div class="col-md-12">
+                    <div id="next" class="well carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active row">
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div> <!--/row and item-->
+                            
+                            <div class="item row">
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div> <!--/row and item-->
+                        
+                            <div class="item row">
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="descrip.html" class="thumbnail">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div> <!--/row and item-->
+                        </div> <!--/carousel-inner--> 
+                        
+                        <a class="left carousel-control" href="#next" data-slide="prev">‹</a>
+                        <a class="right carousel-control" href="#next" data-slide="next">›</a>
+                    </div> <!--/myCarousel and well-->
                 </div>
-                <!--/carousel-inner--> <a class="left carousel-control" href="#next" data-slide="prev">‹</a>
-
-                <a class="right carousel-control" href="#next" data-slide="next">›</a>
             </div>
-            <!--/myCarousel-->
-        </div>
-        <!--/well-->
-    </div>
-</div>
-        
-        
-        
-        
-        <div class="moviesection">
-            <div class="container">
-                <h3>Other Category</h3>
-    <div class="col-md-12">
-
-        <div class="well">
-            <div id="other" class="carousel slide">
-                
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="#x"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
+            
+            
+            
+            
+            <div class="moviesection">
+                <div class="container">
+                    <h3>Other Category</h3>
+                    <div class="col-md-12">
+                        <div id="other" class="well carousel slide">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active row">
+                                    <div class="col-sm-3">
+                                        <a href="#x">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div> <!--/row and item-->
+                                
+                                <div class="item row">
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div> <!--/row and item-->
+                                
+                                <div class="item row">
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href="#x" class="thumbnail">
+                                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div> <!--/row and item-->
+                            </div> <!--/carousel-inner--> 
+                            <a class="left carousel-control" href="#other" data-slide="prev">‹</a>
+                            <a class="right carousel-control" href="#other" data-slide="next">›</a>
+                        </div> <!--/myCarousel and well-->
                     </div>
-                    <!--/item-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5708/5708710_sa.jpg;maxHeight=550;maxWidth=642" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
                 </div>
-                <!--/carousel-inner--> <a class="left carousel-control" href="#other" data-slide="prev">‹</a>
-
-                <a class="right carousel-control" href="#other" data-slide="next">›</a>
-            </div>
-            <!--/myCarousel-->
-        </div>
-        <!--/well-->
-    </div>
-</div>
-            </div>
-        
             </div>
         </div>
     </div>
-{% endblock %}
-        
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-    $(document).ready(function() {
-	   $('#new').carousel({
-	   interval: 10000
-	   })
-        
-        $('#new').on('slid.bs.carousel', function() {
-    	//alert("slid");
-        });
-        
-
-});
         $(document).ready(function() {
-	   $('#next').carousel({
-	   interval: 15000
-	   })
-        
-        $('#next').on('slid.bs.carousel', function() {
-    	//alert("slid");
+            $('#new').carousel({
+                interval: 10000
+            })
+            
+            $('#new').on('slid.bs.carousel', function() {
+                //alert("slid");
+            });
         });
         
-
-});
         $(document).ready(function() {
-	   $('#other').carousel({
-	   interval: 10000
-	   })
-        
-        $('#other').on('slid.bs.carousel', function() {
-    	//alert("slid");
+            $('#next').carousel({
+                interval: 15000
+            })
+            
+            $('#next').on('slid.bs.carousel', function() {
+                //alert("slid");
+            });
         });
         
-
-});
-
+        $(document).ready(function() {
+            $('#other').carousel({
+                interval: 10000
+            })
+            
+            $('#other').on('slid.bs.carousel', function() {
+                //alert("slid");
+            });
+        });
+        
     </script>
+
+{% end block %}
