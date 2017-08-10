@@ -4,9 +4,19 @@ from passlib.apps import custom_app_context as pwd_context
 conn = sqlite3.connect("website.db") # or use :memory: to put it in RAM cursor = conn.cursor()
 cursor= conn.cursor()
 
+#Delete all rows in tables
+cursor.execute("DELETE FROM users");
+cursor.execute("DELETE FROM inventory");
+cursor.execute("DELETE FROM mediaType");
+cursor.execute("DELETE FROM orders");
+cursor.execute("DELETE FROM payment");
+
+#NOTE: To insert characters that should be escaped, set them as parameters
+#cursor.execute("INSERT INTO inventory(description) VALUES(?)", ("let's go"))
+
 cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('5', 'organized crime', '19.00', 'The Godfather', '238', 'drama', 'https://image.tmdb.org/t/p/w500/rPdtLWNsZmAtoZl9PK7S2wE3qiS.jpg')")
 cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('4', 'prison escape', '20.00', 'The Shawshank Redemption', '278', 'drama', 'https://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg')")
-cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('3', 'upstander in Nazi germany during Holocaust', '21.00', 'Schindler\'s List', '424', 'drama', 'https://image.tmdb.org/t/p/w500/yPisjyLweCl1tbgwgtzBCNCBle.jpg')")
+cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('3', 'upstander in Nazi germany during Holocaust', '21.00', 'Schindlers List', '424', 'drama', 'https://image.tmdb.org/t/p/w500/yPisjyLweCl1tbgwgtzBCNCBle.jpg')")
 cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('2', 'boxer journey', '22.00', 'Raging Bull', '1578', 'drama', 'https://image.tmdb.org/t/p/w500/cbTfaMrWpZWwF3mY40v1SKaAVCx.jpg')")
 cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('6', 'expatriate encounters a former lover', '23.00', 'Casablanca', '289', 'romance', 'https://image.tmdb.org/t/p/w500/wOBKAoUJZb5qTsWv5XXvVV2vUzz.jpg')")
 
@@ -39,14 +49,7 @@ cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaI
 cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('3', 'Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life', '21.00', 'Inception', '27205', 'psychological thriller', 'https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg')")
 cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('2', 'When Lou Bloom, desperate for work, muscles into the world of L.A. crime journalism, he blurs the line between observer and participant to become the star of his own story', '22.00', 'Nightcrawler', '242582', 'thriller', 'https://image.tmdb.org/t/p/w500/8oPY6ULFOTbAEskySNhgsUIN4fW.jpg')")
 cursor.execute("INSERT INTO inventory(quantity, description, price, name, mediaID, genre, img_url) VALUES('6', 'Annies life is a mess. But when she finds out her lifetime best friend is engaged, she must serve as Lillian’s maid of honor', '23.00', 'Bridesmaids', '55721', 'comedy', 'https://image.tmdb.org/t/p/w500/x5ucaJZ4FP589Gn3I8l3ZFV3Nl8.jpg')")
-conn.commit();
-
-#Delete all rows in tables
-cursor.execute("DELETE FROM users");
-cursor.execute("DELETE FROM inventory");
-cursor.execute("DELETE FROM mediaType");
-cursor.execute("DELETE FROM orders");
-cursor.execute("DELETE FROM payment");
+#conn.commit();
 
 #insert test cases
 media = ["DVD", "BluRay", "VHS"]
