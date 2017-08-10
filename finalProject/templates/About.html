@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
 
-<html>
-	<head>
-  	<meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+{% block title %}
+    <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
     <title>History of Bob's Cool Videos</title>
-  </head>
-  <body>
-      
-       <h1><center>Here's a little information about ourselves!</center></h1>
+{% endblock %}
+
+{% block main %}
+
+  <h1><center>Here's a little information about ourselves!</center></h1>
   
 		<p>
     Born out of the love for 80's and 90's culture nostalgia, as well as 
-the desire to expose people to the arts outside of mainstream media culture, 
-Bob's Cool Videos has been dedicated to helping its customers find the perfect 
-videos that they want while at the same expose them to different genres of 
-film throughout the ages. 
+  the desire to expose people to the arts outside of mainstream media culture, 
+  Bob's Cool Videos has been dedicated to helping its customers find the perfect 
+  videos that they want while at the same expose them to different genres of 
+  film throughout the ages. 
 	</p>
   
   <p>
@@ -38,7 +38,7 @@ film throughout the ages.
   a million dollars in the long run. ;)
   </p>
   
-  <a href="https://www.pexels.com/photo/3-vhs-tape-on-top-of-table-157543/"><img alt="Video image" src="video.jpeg" width="400" height="400"/></a>
-  </body>
-
-</html>
+  <a href="https://www.pexels.com/photo/3-vhs-tape-on-top-of-table-157543/">
+    <img alt="Video image" src="video.jpeg" width="400" height="400"/>
+  </a>
+{% endblock %}

@@ -22,40 +22,34 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
     
     <!-- CUSTOM STYLESHEET-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     
     
 </head>
 <body>
-        <div class="container container-fluid text-center" id="bigcontainer">
-        <div class="container container-fluid">
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Bob's Cool Videos</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="{{ url_for('index') }}">Browse</a></li>
-            <li><a href="#">Another Link</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-            <li><a href="{{ url_for('register_api.register') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="{{ url_for('login_api.login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-        </div>
+    <div class="container container-fluid text-center" id="bigcontainer">
+        <nav class="navbar navbar-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Bob's Cool Videos</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="{{ url_for('index') }}">Browse</a></li>
+                <li><a href="#">Another Link</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ url_for('shopping_api.shopping') }}"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="{{ url_for('register_api.register') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="{{ url_for('login_api.login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </nav> 
+        <main>
         
-    </nav>
+        <div class="container container-fluid text-center" id="content">
+            <!--THIS IS WHERE PAGE CONTENT WILL GO-->
+            {% block main %}{% endblock %}
+        </div>
+        </main>
     </div>
-    <div class="container container-fluid text-center" id="content">
-        <!--THIS IS WHERE PAGE CONTENT WILL GO-->
-        {% block main %}{% endblock %}
-    </div>
-    </div>
-     
-    
-    
-    
 </body>
 </html>
