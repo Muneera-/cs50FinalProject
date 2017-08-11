@@ -40,8 +40,8 @@ def login():
         session["user_id"] = rows[0][0]
 
         # redirect user to home page
-        return redirect(url_for("index"))
+        return render_template("login.html")
 
     # else if user reached route via GET (as by clicking a link or via redirect)
     else:
-        return render_template("login.html")
+        return render_template("index.html")
